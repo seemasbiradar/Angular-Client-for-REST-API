@@ -1,0 +1,25 @@
+<table class="table vehicletable">
+    <tr>
+        <td><h3>Details for {{vehicle.Id}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Id</td>
+        <td>{{vehicle.Id}}</td>
+    </tr>
+    <tr>
+        <td>Year</td>
+        <td>{{vehile.Year}}</td>
+    </tr>
+    <tr>
+        <td>Make</td>
+        <td>{{vehicle.Make}}</td>
+    </tr>
+    <tr>
+        <td>Model</td>
+        <td>{{vehicle.Model}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editVehicle({id:vehicle._id})">Edit</a>
+</div>

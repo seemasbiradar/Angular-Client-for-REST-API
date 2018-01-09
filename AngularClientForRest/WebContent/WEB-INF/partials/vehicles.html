@@ -1,0 +1,14 @@
+<a ui-sref="newVehicle" class="btn-primary btn-lg nodecoration">Add New Vehicle</a>
+<table class="table vehicletable">
+    <tr>
+        <td><h3>All Vehicles</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="vehicle in vehicless">
+        <td>{{vehicle.Id}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewVehicle({id:vehicle._id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteVehicle(vehicle)">Delete</a>
+        </td>
+    </tr>
+</table>
